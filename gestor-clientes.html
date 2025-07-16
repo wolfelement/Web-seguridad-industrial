@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Clientes</title>
+  <link rel="stylesheet" href="css/Footer_Nav.Css" />
+  <link rel="stylesheet" href="css/clientes.css" />
+</head>
+<body>
+  <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav_logo"><a href="index.html"><img class="logo" src="imagenes/LOGO.png" alt=""></a></div>
+        <button class="abrir-menu" id="abrir">☰</button>
+        <div class="nav" id="nav">
+        <div class="nav_a">
+            <button class="cerrar-menu" id="cerrar">x</button>
+            <a href="marca.html">Marcas</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="Catalogo.html">Ver Catálogos</a>
+            <a href="Contactanos.html">Contactanos</a>
+            <a href="comprar.html">Cotizar</a>
+                <div class="dropdown">
+      <a href="#" class="dropdown-btn">Más ▾</a>
+      <div class="dropdown-content">
+          <a href="seguimiento-pedidos.html">Seguimiento de Pedidos</a>
+          <a href="simulador-cotizacion.html">Simulador de Cotización</a>
+          <a href="calculadora-epp.html">Recomendaciones de Productos</a>
+          <a href="preguntas.html">Preguntas Frecuentes</a>          
+      </div>
+    </div>
+    </div>
+
+
+        
+        <div class="div_atencion">
+            <a href="Cotizacion.html">
+                <button class="btn">Atención al Cliente</button>
+            </a>
+        </div>
+        <div class="div_categories">
+            <a href="Categoria.html">
+                <button class="btn1" href="">Categorías</button>
+            </a>
+        </div>
+    </div>
+    </div>
+
+  <!-- Sección de gestión de clientes -->
+  <div class="contenido-principal2">
+    <div class="clientes-interactivos">
+<div class="gestor-container">
+  <h2>Gestión de Clientes Frecuentes</h2>
+  <input type="text" id="codigo" placeholder="Código del Cliente (solo números)">
+  <input type="text" id="nombre" placeholder="Primer Nombre">
+  <input type="text" id="apellidoP" placeholder="Apellido Paterno">
+  <input type="text" id="apellidoM" placeholder="Apellido Materno">
+
+  <div class="botones">
+    <button onclick="agregarCliente()">Agregar</button>
+    <button onclick="buscarCliente()">Buscar</button>
+    <button onclick="eliminarCliente()">Eliminar</button>
+    <button onclick="ordenarClientes()">Ordenar</button>
+    <button onclick="mostrarClientes()">Mostrar Todos</button>
+    <button onclick="editarCliente()">Editar</button>
+    <button onclick="guardarCambios()">Guardar Cambios</button>
+  </div>
+    <div>
+      <a href="admin-pedidos.html">Administrador de Pedidos</a>
+    </div>
+  <ul id="listaClientes"></ul>
+</div>
+      <h3>Listado de Clientes:</h3>
+      <ul id="listaClientes"></ul>
+    </div>
+
+  </div>
+
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <h3>Equipamos tu confianza en cada proyecto.</h3>
+      <div class="footer_grupal">
+        <div class="footer_a">
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Políticas de Atención</a></li>
+            <li><a href="#">Sabías que?</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer_a">
+          <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://x.com/">X</a></li>
+            <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <a href="#">Atención al Cliente: ADASSDA@fagy.com.pe</a><br>
+          <a href="#">Oficina Principal: Miraflores progreso, 973 - 2do Piso, Miraflores - Arequipa</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="JavaScrip/js/gestor_clientes.js"></script>
+  <script src="JavaScrip/js/nav.js"></script>
+
+</body>
+</html>

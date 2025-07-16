@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cotización vía WhatsApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Footer_Nav.Css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+  .cuerpo {
+    margin: 140px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    padding: 60px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    animation: DESVANECERSE 1s ease-in-out;
+  }
+
+  .cuerpo h1 {
+    font-size: 36px;
+    color: #1b5e20;
+    margin-bottom: 20px;
+  }
+
+  .cuerpo p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 18px 32px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #199e4c;
+    transform: scale(1.05);
+  }
+
+  /* Animación */
+  @keyframes DESVANECERSE {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+  </style>
+</head>
+<body>
+
+        <!-- NAVEGADOR -->
+
+    <div class="navbar">
+        <div class="nav_logo"><a href="index.html"><img class="logo" src="imagenes/LOGO.png" alt=""></a></div>
+        <button class="abrir-menu" id="abrir">☰</button>
+        <div class="nav" id="nav">
+        <div class="nav_a">
+            <button class="cerrar-menu" id="cerrar">x</button>
+            <a href="marca.html">Marcas</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="Catalogo.html">Ver Catálogos</a>
+            <a href="Contactanos.html">Contactanos</a>
+            <a href="comprar.html">Cotizar</a>
+                <div class="dropdown">
+      <a href="#" class="dropdown-btn">Más ▾</a>
+      <div class="dropdown-content">
+          <a href="seguimiento-pedidos.html">Seguimiento de Pedidos</a>
+          <a href="simulador-cotizacion.html">Simulador de Cotización</a>
+          <a href="calculadora-epp.html">Recomendaciones de Productos</a>
+          <a href="preguntas.html">Preguntas Frecuentes</a>          
+      </div>
+    </div>
+    </div>
+
+
+        
+        <div class="div_atencion">
+            <a href="Cotizacion.html">
+                <button class="btn">Atención al Cliente</button>
+            </a>
+        </div>
+        <div class="div_categories">
+            <a href="Categoria.html">
+                <button class="btn1" href="">Categorías</button>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+        <div class="cuerpo">
+        <h1>ESCRIBENOS</h1>
+        <p>Haz clic en el botón para hablar con nosotros directamente por WhatsApp.</p>
+        <a class="whatsapp-btn" href="https://wa.me/+51991760596?text=Hola%2C%20quiero%20cotizar%20unos%20productos%20de%20su%20cat%C3%A1logo" target="_blank">💬 Ir a WhatsApp</a>
+        </div>
+
+      <!-- FOOTER -->
+
+      <footer>
+        <div class="footer-left">
+            <h3>Equipamos tu confianza en cada proyecto.</h3>
+            <div class="footer_grupal">
+                <div class="footer_a">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Políticas de Atención</a></li>
+                        <li><a href="#">Sabías que?</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer_a">
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://x.com/">X</a></li>
+                        <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                        <a href="#">Atención al Cliente: ADASSDA@fagy.com.pe</a>    <br>
+                        <a href="#">Oficina Principal: Miraflores progreso, 973 - 2do Piso, Miraflores - Arequipa</a>
+                </div>
+        </div>
+        </div>
+        
+
+    </footer>
+    
+    <script src="JavaScrip/js/nav.js"></script>
+
+</body>
+</html>

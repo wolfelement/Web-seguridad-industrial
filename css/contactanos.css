@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.info {
+  padding-right: 20px;
+}
+
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.info p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.info a {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease 0.2s both;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 8px rgba(37, 211, 102, 0.5);
+  transform: scale(1.02);
+  outline: none;
+}
+
+form input[type="file"] {
+  padding: 10px;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 25px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* 🔁 RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  
+  .info {
+    padding-right: 0;
+  }
+}
+
+  
+
+  

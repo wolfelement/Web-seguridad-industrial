@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comprar.css">
+    <link rel="stylesheet" href="css/Footer_Nav.Css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div class="nav_logo"><a href="index.html"><img class="logo" src="imagenes/LOGO.png" alt=""></a></div>
+        <button class="abrir-menu" id="abrir">☰</button>
+        <div class="nav" id="nav">
+        <div class="nav_a">
+            <button class="cerrar-menu" id="cerrar">x</button>
+            <a href="marca.html">Marcas</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="Catalogo.html">Ver Catálogos</a>
+            <a href="Contactanos.html">Contactanos</a>
+            <a href="comprar.html">Cotizar</a>
+                <div class="dropdown">
+      <a href="#" class="dropdown-btn">Más ▾</a>
+      <div class="dropdown-content">
+          <a href="seguimiento-pedidos.html">Seguimiento de Pedidos</a>
+          <a href="simulador-cotizacion.html">Simulador de Cotización</a>
+          <a href="calculadora-epp.html">Recomendaciones de Productos</a>
+          <a href="preguntas.html">Preguntas Frecuentes</a>          
+      </div>
+    </div>
+    </div>
+     
+        <div class="div_atencion">
+            <a href="Cotizacion.html">
+                <button class="btn">Atención al Cliente</button>
+            </a>
+        </div>
+        <div class="div_categories">
+            <a href="Categoria.html">
+                <button class="btn1" href="">Categorías</button>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <h2 class="comprar_titulo">COMPRAR PRODUCTOS</h2>
+  <section class="catalogo-productos">
+    <div class="tarjeta-producto">
+      <img src="imagenes/bloqueador solar bahia.png" alt="Bloqueador solar">
+      <h4>Bloqueador solar bahía SPF90</h4>
+      <button onclick="agregarProducto('Bloqueador solar bahía SPF90', 20)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Guante de cuero de badana.webp" alt="Guantes Tecseg">
+      <h4>Guante de cuero Tecseg AS010</h4>
+      <button onclick="agregarProducto('Guante Tecseg AS010', 15)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Dichucha de emergencias.jpg" alt="Ducha Encon">
+      <h4>Ducha emergencia Encon 01050207</h4>
+      <button onclick="agregarProducto('Ducha Encon 01050207', 120)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Casco-Endurance-Plus-Visor-PW54.jpg" alt="Casco PW54">
+      <h4>Casco Endurance Plus Visor PW54</h4>
+      <button onclick="agregarProducto('Casco PW54', 35)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/respirador Moldexxxxx.webp" alt="Respirador 6700">
+      <h4>Respirador 6700 FullFace Talla S</h4>
+      <button onclick="agregarProducto('Respirador 6700 Talla S', 100)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Rollos absorbentes.png" alt="Rollo SPILLTECH">
+      <h4>Rollo absorbente SPILLTECH</h4>
+      <button onclick="agregarProducto('Rollo SPILLTECH', 40)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Botin-Delta-Plus-Caderousse-S3-CI-SRC-CALZADO-DE-SEGURIDAD.jpg" alt="Botas DELTAPLUS">
+      <h4>Botas de seguridad DELTAPLUS</h4>
+      <button onclick="agregarProducto('Botas DELTAPLUS', 60)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Filtro Moldex.jpg" alt="Filtro Moldex">
+      <h4>Filtro Moldex 7500</h4>
+      <button onclick="agregarProducto('Filtro Moldex 7500', 25)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Orejeras MOL.jpg" alt="Orejeras Moldex">
+      <h4>Orejeras Moldex</h4>
+      <button onclick="agregarProducto('Orejeras Moldex', 30)">🧾 Cotizar</button>
+    </div>
+
+    <div class="tarjeta-producto">
+      <img src="imagenes/Gajas de Seguridad.jpg" alt="Gafas Carbyne">
+      <h4>Gafas de seguridad Carbyne</h4>
+      <button onclick="agregarProducto('Gafas Carbyne', 18)">🧾 Cotizar</button>
+    </div>
+  </section>
+
+
+  <h2 class="productos_agregados">📋 Productos Agregados</h2>
+
+  <table id="tablaCotizacion">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio (S/)</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="total" id="total">Total: S/ 0</div>
+
+  <div class="botones-comprar">
+  <button class="vaciar-btn" onclick="vaciarCarrito()">Vaciar Cotización</button>
+
+  <button class="comprar-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+  </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-left">
+            <h3>Equipamos tu confianza en cada proyecto.</h3>
+            <div class="footer_grupal">
+                <div class="footer_a">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Políticas de Atención</a></li>
+                        <li><a href="#">Sabías que?</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer_a">
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://x.com/">X</a></li>
+                        <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                        <a href="#">Atención al Cliente: ADASSDA@fagy.com.pe</a>    <br>
+                        <a href="#">Oficina Principal: Miraflores progreso, 973 - 2do Piso, Miraflores - Arequipa</a>
+                </div>
+        </div>
+            </div>
+                 <!-- ADMINNN CUANDO INICIAS -->
+                   <div class="modulos-js" id="moduloAdmin" style="display: none; justify-content:center; margin: 40px;">
+                     <a href="gestor-clientes.html" class="modulo">Gestor de Clientes</a>
+                   </div>
+    </footer>
+
+<script src="JavaScrip/js/comprar.js"></script>
+<script src="JavaScrip/js/nav.js"></script>
+
+</body>
+</html>
